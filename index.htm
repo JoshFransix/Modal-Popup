@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Popup with blur effect</title>
+</head>
+<body>
+  <div class="container" id="blur">
+    <div class="content">
+      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, nisi.</h2>
+      <a href="#" class="text" onclick="toggle()">Read More</a>
+    </div>
+  </div>
+
+  <div id="popup">
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cupiditate ullam quam animi quasi, repellendus consequuntur.</p>
+
+    <a href="#" class="text" onclick="toggle()">Close</a>
+  </div>
+
+
+
+  <script type="text/javascript">
+    function toggle() {
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active')
+
+      var popup = document.getElementById('popup');
+      popup.classList.toggle('active')
+    }
+  
+  </script>
+</body>
+</html>
